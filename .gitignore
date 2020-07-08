@@ -1,0 +1,43 @@
+## Compiled Files
+*.class
+
+## Editor / IDE Files
+*~
+.idea/
+
+## Package Files
+*.ear
+*.jar
+*.nar
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.war
+*.zip
+*.zipx
+
+## Platform Files (Darwin)
+.DS_Store
+
+## Platform Files (Linux)
+.Trash-*
+
+## Platform Files (Windows)
+[Dd]esktop.ini
+[Tt]humbs.db
+
+## Toolchain Files
+.gradle/
+.gradletasknamecache
+.kotlintest/
+.mvn/
+build/
+target/
+
+## Uncategorized Files
+hs_err_pid*
+*.log
+
+## Rule Exclusions
+!*-wrapper.jar

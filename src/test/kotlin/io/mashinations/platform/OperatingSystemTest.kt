@@ -21,7 +21,7 @@ import io.kotest.data.row
 import io.kotest.matchers.booleans.shouldBeTrue
 import io.kotest.matchers.shouldBe
 
-class OperatingSystemTest : ExpectSpec({
+internal class OperatingSystemTest : ExpectSpec({
     context("Current Tests") {
         val osName = System.getProperty("os.name")
 

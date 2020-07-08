@@ -20,7 +20,7 @@ import io.kotest.data.forAll
 import io.kotest.data.row
 import io.kotest.matchers.shouldBe
 
-class OperatingSystemFamilyTest : ExpectSpec({
+internal class OperatingSystemFamilyTest : ExpectSpec({
     context("Verify 'OperatingSystemFamily' Support") {
         forAll(
             row(OperatingSystemFamily.DARWIN, "Darwin", "darwin", "DARWIN"),

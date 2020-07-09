@@ -18,6 +18,11 @@ repositories {
    jcenter()
 }
 
+tasks.withType<JacocoReport> {
+    reports.xml.isEnabled = true
+}
+
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+

@@ -1,0 +1,24 @@
+name: Build with Gradle
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        jdk: [ 8, 9, 10, 11, 12, 13, 14 ]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Initialize JDK ${{ matrix.jdk }}
+        uses: actions/setup-java@v1
+        with:
+          java-version: ${{ matrix.jdk }}
+
+      - name: Build and Test
+        run: ./gradlew build

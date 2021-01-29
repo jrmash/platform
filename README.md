@@ -1,0 +1,2 @@
+# platform
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/36ade26bce4c484dbf6f6c6c64a33ae8)](https://app.codacy.com/gh/jrmash/platform?utm_source=github.com&utm_medium=referral&utm_content=jrmash/platform&utm_campaign=Badge_Grade)

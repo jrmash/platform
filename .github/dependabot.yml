@@ -1,9 +1,13 @@
-# Please see the documentation for all configuration options:
-#   - https://git.io/JJgWI
-
 version: 2
 updates:
-  - package-ecosystem: "gradle"
-    directory: "/"
-    schedule:
-      interval: "daily"
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "03:00"
+    timezone: America/Los_Angeles
+  open-pull-requests-limit: 10
+  reviewers:
+  - jrmash
+  assignees:
+  - jrmash

@@ -2,7 +2,7 @@ plugins {
     id("idea")
     id("jacoco")
     id("java")
-    kotlin("jvm") version "1.4.30"
+    kotlin("jvm") version "1.4.31"
 }
 
 group = "io.mashinations.platform"

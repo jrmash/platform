@@ -10,7 +10,7 @@ version = "0.0.1"
 
 dependencies {
 	testImplementation("io.kotest:kotest-runner-junit5:4.3+")
-	testImplementation("io.kotest:kotest-assertions-core:4.3+")
+	testImplementation("io.kotest:kotest-assertions-core:4.4+")
 	testImplementation("io.kotest:kotest-property:4.3+")
 }
 

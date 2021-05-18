@@ -22,10 +22,10 @@ jobs:
           java-version: ${{ matrix.jdk }}
 
       - name: Build and Test
-        run: ./gradlew build
+        run: ./gradlew build -b build.gradle.kts
       - name: Generate Test Reports
         if: ${{ matrix.jdk == 14 }}
-        run: ./gradlew jacocoTestReport
+        run: ./gradlew jacocoTestReport -b build.gradle.kts
       - name: Publish Test Reports
         if: ${{ matrix.jdk == 14 }}
         uses: codacy/codacy-coverage-reporter-action@master

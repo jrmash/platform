@@ -1,0 +1,10 @@
+plugins {
+    id "java-library"
+}
+
+group = "io.mashinations.platform"
+version = "0.0.1"
+
+repositories {
+   mavenCentral()
+}

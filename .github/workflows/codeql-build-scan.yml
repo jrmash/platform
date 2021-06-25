@@ -18,7 +18,9 @@ jobs:
         fetch-depth: 2
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
+      with:
+        queries: security-and-quality
     - name: Perform Autobuild
       uses: github/codeql-action/autobuild@v1
-    - name: Perform Scan
+    - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
